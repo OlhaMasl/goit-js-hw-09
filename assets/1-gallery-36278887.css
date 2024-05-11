@@ -1,0 +1,1 @@
+body{padding-left:40px}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;list-style:none}.gallery-link{width:360px;height:200px}.gallery-image{display:block;max-width:100%;height:auto}.gallery-image:hover{border:1px solid #212121}
