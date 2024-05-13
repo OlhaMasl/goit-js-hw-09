@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW09-form</title>
+    
+  <script type="module" crossorigin src="/goit-js-hw-09/commonHelpers2.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-09/assets/modulepreload-polyfill-3cfb730f.js">
+  <link rel="stylesheet" href="/goit-js-hw-09/assets/2-form-418e69fe.css">
 </head>
 <body>
     <a href="./index.html">Main page</a>
+
+    <form class="feedback-form" autocomplete="off">
+        <label class="form-label">
+            Email
+            <input type="email" name="email" autofocus />
+        </label>
+        <label class="form-label">
+            Message
+            <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit" class="form-btn">Submit</button>
+    </form>
+
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" defer></script>
+
+    
 </body>
 </html>
