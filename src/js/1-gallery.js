@@ -1,3 +1,8 @@
+// Описаний в документації
+import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
+
 const images = [
   {
     preview:
@@ -91,7 +96,4 @@ const galleryModel = new SimpleLightbox('.gallery a', {
 galleryModel.on('show.simplelightbox', function () {
 	// do something…
 });
- // Описаний в документації
-import SimpleLightbox from "simplelightbox/dist/simple-lightbox.esm";
-// Додатковий імпорт стилів
-import "simplelightbox/dist/simple-lightbox.min.css";
+ 

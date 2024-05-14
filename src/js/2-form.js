@@ -25,7 +25,7 @@ function onFormInput(event) {
 
 // console.log(_.throttle);
 
-feedbackForm.addEventListener("input", _.throttle(onFormInput, 1000));
+feedbackForm.addEventListener("input", onFormInput);
 
 function onFormSubmit(event) {
     event.preventDefault();
