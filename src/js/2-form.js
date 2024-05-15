@@ -16,11 +16,11 @@ function onFormInput(event) {
     // formData[event.target.name] = event.target.value;
     formData.email = emailInput.value.trim();
     formData.message = textarea.value.trim();
+    // console.log(formData);
 
     const jsonFormData = JSON.stringify(formData);
     // console.log(jsonFormData);
     localStorage.setItem(feedback, jsonFormData);
-
 }
 
 // console.log(_.throttle);
@@ -29,13 +29,13 @@ feedbackForm.addEventListener("input", onFormInput);
 
 function onFormSubmit(event) {
     event.preventDefault();
-    if (emailInput.value === "" || textarea.value === "") {
+    if (emailInput.value.trim() === "" || textarea.value.trim() === "") {
         alert("Fill please all fields"); 
     } else {
         console.log(formData);
     };
     localStorage.removeItem(feedback);
-    event.currentTarget.reset();
+    // event.currentTarget.reset();
 };
 
 feedbackForm.addEventListener("submit", onFormSubmit)
